@@ -3,121 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центр Чистоты НТ | Химчистка и Уничтожение насекомых Нижний Тагил</title>
-    <meta name="description" content="Профессиональная дезинсекция и химчистка в Нижнем Тагиле. Santoemma, Karcher, Stihl, Ozonbox. Работаю по городу и пригороду (40 р/км). Рейтинг 4.9.">
+    <title>Центр Чистоты НТ | Химчистка и Дезинсекция Нижний Тагил</title>
+    <meta name="description" content="Профессиональная дезинсекция и химчистка в Нижнем Тагиле. Santoemma, Karcher, Stihl, Ozonbox. Рейтинг 4.9 на Авито.">
     <style>
-        :root { --blue: #1e3a8a; --green: #059669; --bg: #f8fafc; --accent: #ef4444; }
+        :root { --blue: #1e3a8a; --green: #059669; --bg: #f8fafc; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); color: #1e293b; line-height: 1.5; }
         header { background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .hero { padding: 3rem 1rem; text-align: center; background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); border-bottom: 1px solid #e2e8f0; }
-        .trust-badge { background: white; padding: 12px 25px; border-radius: 50px; display: inline-block; margin-bottom: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .hero { padding: 2rem 1rem; text-align: center; background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); border-bottom: 1px solid #e2e8f0; }
+        
+        .trust-badge { background: white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; font-size: 0.9rem; }
         .trust-badge a { color: #b45309; text-decoration: none; font-weight: bold; }
         
-        .cta-grid { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 2rem 0; }
-        .btn { width: 100%; max-width: 350px; padding: 16px; border-radius: 12px; text-decoration: none; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; gap: 10px; border: none; cursor: pointer; transition: 0.2s; font-size: 1.1rem; }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .cta-grid { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 1.5rem 0; }
+        .btn { width: 100%; max-width: 320px; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; transition: 0.2s; font-size: 1rem; box-sizing: border-box; }
         .btn-avito { background: #ff5a10; }
         .btn-vk { background: #0077ff; }
-        .btn-copy { background: #334155; }
+        .btn-phone { background: #334155; }
 
-        .container { max-width: 1000px; margin: 0 auto; padding: 1rem; }
-        .section { background: white; border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .section h2 { color: var(--blue); border-left: 4px solid var(--green); padding-left: 15px; margin-top: 0; }
-        .tech-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; font-size: 0.9rem; }
-        .tech-item { background: #f1f5f9; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 1rem; box-sizing: border-box; }
+        .section { background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .section h2 { color: var(--blue); border-left: 4px solid var(--green); padding-left: 12px; margin-top: 0; font-size: 1.3rem; }
         
-        .price-note { background: #fef2f2; border: 1px solid #fecaca; padding: 15px; border-radius: 12px; color: #991b1b; margin-top: 1rem; font-weight: 500; }
-        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 3rem 1rem; }
-        footer a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
-        footer a:hover { border-bottom: 1px solid #fff; }
-        .keyword-cloud { font-size: 0.8rem; color: #94a3b8; margin-top: 20px; opacity: 0.6; }
+        .tech-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 10px; font-size: 0.85rem; }
+        .tech-item { background: #f1f5f9; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        
+        .price-note { background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 12px; color: #991b1b; margin-top: 1rem; font-weight: 500; font-size: 0.95rem; line-height: 1.3; }
+        
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.85rem; }
+        footer a { color: #fff; text-decoration: none; }
+
+        /* Уведомление о копировании */
+        #toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 10px 20px; border-radius: 50px; display: none; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="margin:0; font-size: 1.4rem;">💎 Центр Чистоты НТ</h1>
+    <h1 style="margin:0; font-size: 1.2rem;">💎 Центр Чистоты НТ</h1>
 </header>
 
 <section class="hero">
     <div class="trust-badge">
-        <a href="https://www.avito.ru/brands/i11974196?gdlkerfdnwq=101&page_from=from_item_header&iid=3954171036" target="_blank">⭐ Рейтинг 4.9 на Авито (Смотреть все отзывы)</a>
+        <a href="https://avito.ru" target="_blank">⭐ Рейтинг 4.9 на Авито</a>
     </div>
-    <h2 style="margin-top:0;">Профессиональная дезинфекция и химчистка</h2>
-    <p>Нижний Тагил и пригород. Работа напрямую с мастером без посредников.</p>
+    <h2 style="margin:0 0 10px 0; font-size: 1.6rem;">Дезинфекция и химчистка</h2>
+    <p style="margin:0; font-size: 0.95rem;">Нижний Тагил. Работаю напрямую без посредников.</p>
     
     <div class="cta-grid">
-        <a href="https://www.avito.ru/nizhniy_tagil/predlozheniya_uslug/himchistka_divanov_matrasov_kovrov_3954171036" target="_blank" class="btn btn-avito">💬 Написать мастеру на Авито</a>
-        <a href="https://vk.com/id4666416" target="_blank" class="btn btn-vk">👤 Написать Дмитрию в ВК</a>
-        <button onclick="copyPhone()" class="btn btn-copy">📞 <span id="pNum">+7 (950) 642-22-92</span> (Копировать)</button>
+        <a href="https://avito.ru" target="_blank" class="btn btn-avito">💬 Написать на Авито</a>
+        <a href="https://vk.com" target="_blank" class="btn btn-vk">👤 Написать Дмитрию в ВК</a>
+        <button onclick="copyPhone()" class="btn btn-phone">📞 +7 (950) 642-22-92</button>
     </div>
 </section>
 
 <div class="container">
-    <!-- Блок: Оборудование -->
     <section class="section">
-        <h2>🛠️ Профессиональный арсенал</h2>
-        <p>Использую технику индустриального класса для максимального результата:</p>
+        <h2>🛠️ Мой арсенал</h2>
         <div class="tech-list">
-            <div class="tech-item"><strong>Химчистка:</strong><br>Santoemma Sabrina MAXI, Karcher Puzzi 10</div>
-            <div class="tech-item"><strong>Дезинсекция:</strong><br>Мотоопрыскиватель Stihl SR 430, Airofog U260, Marolex</div>
-            <div class="tech-item"><strong>Озонация:</strong><br>OZONBOX AIR-15 (высокая мощность)</div>
+            <div class="tech-item"><strong>Химчистка:</strong><br>Santoemma, Karcher Puzzi</div>
+            <div class="tech-item"><strong>Дезинсекция:</strong><br>Stihl SR 430, Airofog U260</div>
+            <div class="tech-item"><strong>Озонация:</strong><br>OZONBOX AIR-15</div>
         </div>
     </section>
 
-    <!-- Блок: Дезинсекция -->
     <section class="section">
-        <h2>🐜 Уничтожение насекомых</h2>
-        <p>Эффективная борьба с клопами и тараканами. Использую проверенные препараты: <strong>Пропал, БагДЭД, Агран, Циперметрин</strong>. Работаю анонимно.</p>
-        <ul>
-            <li>Борьба с постельными клопами и тараканами</li>
-            <li>Обработка от блох, муравьев, чешуйниц</li>
-            <li>Акарицидная обработка (клещи) — Stihl SR 430</li>
-        </ul>
+        <h2>🐜 Дезинсекция</h2>
+        <p style="font-size: 0.9rem;">Уничтожение клопов и тараканов препаратами <strong>Пропал, БагДЭД, Агран</strong>. Анонимно. Обработка участков от клещей (Stihl).</p>
     </section>
 
-    <!-- Блок: Химчистка и Спецзадачи -->
     <section class="section">
-        <h2>🛋️ Химчистка и спец-клининг</h2>
-        <p>Глубокая чистка мебели и удаление сложнейших загрязнений.</p>
-        <ul>
-            <li>Химчистка диванов, матрасов, ковролина</li>
-            <li><strong>Уборка после трупа или пожара</strong> (спец-составы)</li>
-            <li>Озонация: удаление запаха табака, гари, плесени</li>
-            <li>Генеральная уборка через надежных партнеров</li>
-        </ul>
+        <h2>🛋️ Химчистка</h2>
+        <p style="font-size: 0.9rem;">Чистка диванов, матрасов. <strong>Уборка после трупа или пожара</strong>. Удаление любых запахов озоном.</p>
     </section>
 
-    <!-- Блок: География -->
     <section class="section">
         <h2>📍 Выезд и районы</h2>
-        <p>Обслуживаю: <strong>ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель</strong>.</p>
+        <p style="font-size: 0.9rem;">ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель.</p>
         <div class="price-note">
-            🚀 Выезд за пределы Нижнего Тагила: +40 руб. за 1 км.
+            🚀 Выезд за пределы города: +40 руб. за 1 км.
         </div>
     </section>
 </div>
 
 <footer>
     <p>
-        <a href="https://vk.com/centr_cleaner_nt" target="_blank">Центр Чистоты НТ</a> | 
-        <a href="https://vk.com/id4666416" target="_blank">Дмитрий</a> | 
-        <a href="mailto:1DimonNT@gmail.com">1DimonNT@gmail.com</a>
+        <a href="https://vk.com" target="_blank">Центр Чистоты НТ</a> | 
+        <a href="https://go.2gis.com/5GQFY" target="_blank">Мы на 2ГИС</a>
     </p>
-    <div class="keyword-cloud">
-        химчистка мебели нижний тагил, уничтожение клопов тагил, потравить тараканов вагонка, озонация воздуха нт, уборка после смерти тагил, дезинсекция цена, химчистка матраса ггм
-    </div>
-    <p style="margin-top: 15px; font-size: 0.7rem; opacity: 0.5;">&copy; 2024-2026 Центр Чистоты НТ. Работаем для вас.</p>
+    <p>Email: <a href="mailto:1DimonNT@gmail.com">1DimonNT@gmail.com</a></p>
+    <p style="opacity: 0.5; font-size: 0.7rem; margin-top: 10px;">&copy; 2024-2026 Центр Чистоты НТ</p>
 </footer>
+
+<div id="toast">Номер скопирован!</div>
 
 <script>
     function copyPhone() {
         const num = "+79506422292";
         navigator.clipboard.writeText(num).then(() => {
-            const span = document.getElementById('pNum');
-            const old = span.innerText;
-            span.innerText = "СКОПИРОВАНО!";
-            setTimeout(() => { span.innerText = old; }, 2000);
+            const toast = document.getElementById('toast');
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2500);
         });
     }
 </script>
