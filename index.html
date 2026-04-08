@@ -7,17 +7,25 @@
     <meta name="description" content="Профессиональная химчистка диванов и уничтожение насекомых в Нижнем Тагиле. Рейтинг 4.9 на Авито! Работаем на ГГМ, Вагонке, Центре.">
     <style>
         :root { --main-blue: #0056b3; --main-green: #28a745; --light: #f8f9fa; }
-        body { font-family: sans-serif; margin: 0; color: #333; line-height: 1.6; }
-        header { background: var(--main-blue); color: white; padding: 1rem; text-align: center; }
-        .hero { background: var(--light); padding: 2rem; text-align: center; border-bottom: 3px solid var(--main-green); }
-        .btn { display: inline-block; padding: 10px 20px; margin: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; color: white; }
-        .btn-wa { background: #25d366; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        header { background: var(--main-blue); color: white; padding: 1.5rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .hero { background: var(--light); padding: 3rem 1rem; text-align: center; border-bottom: 4px solid var(--main-green); }
+        .hero h2 { font-size: 2.2rem; margin-bottom: 1rem; color: #000; }
+        .btn { display: inline-block; padding: 15px 30px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn:hover { transform: scale(1.05); }
+        .btn-call { background: var(--main-green); font-size: 1.2rem; }
         .btn-vk { background: #0077ff; }
-        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 2rem; }
-        .card { border: 1px solid #ddd; border-radius: 8px; width: 280px; padding: 1.5rem; text-align: center; }
-        .trust-box { background: #fff3cd; padding: 1rem; margin: 2rem; border-radius: 10px; text-align: center; }
-        footer { background: #333; color: white; text-align: center; padding: 2rem; }
-        .geo-tags { font-size: 0.8rem; opacity: 0.7; }
+        .btn-wa { background: #25d366; font-size: 0.9rem; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 3rem 1rem; }
+        .card { background: white; border: 1px solid #eee; border-radius: 12px; width: 300px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card h3 { color: var(--main-blue); }
+        .trust-box { background: #fff3cd; padding: 1.5rem; margin: 1.5rem auto; max-width: 600px; border-radius: 15px; border: 1px solid #ffeeba; }
+        .trust-box a { color: #856404; font-weight: bold; }
+        .contact-info { padding: 2rem 1rem; background: #fff; text-align: center; border-top: 1px solid #eee; }
+        footer { background: #222; color: #ccc; text-align: center; padding: 3rem 1rem; font-size: 0.9rem; }
+        footer a { color: white; text-decoration: none; }
+        .geo-tags { margin-top: 15px; font-size: 0.8rem; color: #777; }
+        @media (max-width: 600px) { .hero h2 { font-size: 1.6rem; } .btn { width: 80%; } }
     </style>
 </head>
 <body>
@@ -27,45 +35,54 @@
 </header>
 
 <section class="hero">
-    <h2>Химчистка мебели и уничтожение насекомых</h2>
-    <p>Работаю сам на себя. Честные цены. Результат гарантирую!</p>
+    <h2>Химчистка мебели и дезинсекция</h2>
+    <p>Профессиональный подход частного мастера в Нижнем Тагиле</p>
+    
     <div class="trust-box">
-        <strong>⭐ Мой рейтинг на Авито: 4.9 (более 47 отзывов)</strong>
+        ⭐ <strong>Рейтинг 4.9 на Авито</strong> (более 47 отзывов)<br>
+        <a href="https://avito.ru" target="_blank">Перейти в профиль Авито</a>
     </div>
-    <a href="https://wa.me" class="btn btn-wa">Написать в WhatsApp</a>
-    <a href="https://vk.com" class="btn btn-vk">Группа ВК</a>
+
+    <a href="tel:+79506422292" class="btn btn-call">📞 Позвонить мастеру</a>
+    <a href="https://vk.com/centr_cleaner_nt" target="_blank" class="btn btn-vk">Группа ВКонтакте</a>
+    <br>
+    <a href="https://wa.me" class="btn btn-wa">WhatsApp (если есть VPN)</a>
 </section>
 
 <section class="services">
     <div class="card">
         <h3>🛋️ Химчистка</h3>
-        <p>Глубокая чистка диванов, матрасов и кресел. Вывожу пятна и запахи.</p>
+        <p>Глубокая чистка диванов, матрасов и кресел. Удаление пятен и запахов профессиональным оборудованием.</p>
     </div>
     <div class="card">
         <h3>🐜 Дезинсекция</h3>
-        <p>Уничтожение клопов и тараканов. Анонимно. Профессиональное оборудование.</p>
+        <p>Уничтожение клопов и тараканов. Работаю анонимно. Безопасные препараты без резкого запаха.</p>
     </div>
     <div class="card">
-        <h3>💨 Озонация</h3>
-        <p>Полное удаление неприятных запахов и стерилизация помещений.</p>
+        <h3>🌫️ Озонация</h3>
+        <p>Устранение запахов табака, гари, плесени. Стерилизация воздуха в квартирах и авто.</p>
     </div>
 </section>
 
-<section style="text-align: center; padding: 2rem;">
-    <h3>Почему выбирают меня:</h3>
-    <ul style="list-style: none; display: inline-block; text-align: left;">
-        <li>✅ Опыт более 45 успешных заказов (подтверждено на Авито)</li>
-        <li>✅ Работаю во всех районах НТ (выезд бесплатный)</li>
-        <li>✅ Профессиональная химия, безопасная для детей и животных</li>
-    </ul>
+<section class="contact-info">
+    <h3>Контактные данные:</h3>
+    <p>📱 Телефон: <strong>+7 (950) 642-22-92</strong></p>
+    <p>📧 Email: <a href="mailto:1DimonNT@gmail.com">1DimonNT@gmail.com</a></p>
+    <p>📍 Работаю по всему Нижнему Тагилу (выезд бесплатный)</p>
 </section>
 
 <footer>
-    <p>Свяжитесь со мной:</p>
-    <p>Авито: <a href="https://avito.ru" style="color: #fff;">Профиль мастера</a></p>
-    <p class="geo-tags">Нижний Тагил: ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель.</p>
+    <p><strong>Центр Чистоты — Ваш мастер в Нижнем Тагиле</strong></p>
+    <p>
+        <a href="https://vk.com/centr_cleaner_nt">ВКонтакте</a> | 
+        <a href="https://avito.ru">Авито</a> | 
+        <a href="https://2gis.ru">2ГИС</a>
+    </p>
+    <div class="geo-tags">
+        Районы обслуживания: ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель, Северный.
+    </div>
+    <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.5;">&copy; 2024-2026 Центр Чистоты НТ. Все права защищены.</p>
 </footer>
 
 </body>
 </html>
-
