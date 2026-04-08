@@ -3,86 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центр Чистоты НТ | Химчистка мебели и Дезинсекция Нижний Тагил</title>
-    <meta name="description" content="Профессиональная химчистка диванов и уничтожение насекомых в Нижнем Тагиле. Рейтинг 4.9 на Авито! Работаем на ГГМ, Вагонке, Центре.">
+    <title>Центр Чистоты НТ | Химчистка и Дезинсекция Нижний Тагил</title>
+    <meta name="description" content="Профессиональная химчистка диванов и уничтожение насекомых в Нижнем Тагиле. Работаю на ГГМ, Вагонке, Центре. Рейтинг 4.9 на Авито!">
     <style>
-        :root { --main-blue: #0056b3; --main-green: #28a745; --light: #f8f9fa; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
-        header { background: var(--main-blue); color: white; padding: 1.5rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .hero { background: var(--light); padding: 3rem 1rem; text-align: center; border-bottom: 4px solid var(--main-green); }
-        .hero h2 { font-size: 2.2rem; margin-bottom: 1rem; color: #000; }
-        .btn { display: inline-block; padding: 15px 30px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .btn:hover { transform: scale(1.05); }
-        .btn-call { background: var(--main-green); font-size: 1.2rem; }
+        :root {
+            --blue: #1e3a8a;
+            --green: #10b981;
+            --accent: #3b82f6;
+            --bg: #f0f9ff;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            color: #1e293b;
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .hero {
+            padding: 3rem 1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--blue); margin: 0; font-size: 1.5rem; }
+        h2 { font-size: 2.5rem; color: #0f172a; margin-bottom: 1rem; }
+        
+        /* Кнопки */
+        .cta-container { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 2rem; }
+        .btn {
+            width: 100%;
+            max-width: 320px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .btn-avito { background: #ff5a10; }
         .btn-vk { background: #0077ff; }
-        .btn-wa { background: #25d366; font-size: 0.9rem; }
-        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 3rem 1rem; }
-        .card { background: white; border: 1px solid #eee; border-radius: 12px; width: 300px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { color: var(--main-blue); }
-        .trust-box { background: #fff3cd; padding: 1.5rem; margin: 1.5rem auto; max-width: 600px; border-radius: 15px; border: 1px solid #ffeeba; }
-        .trust-box a { color: #856404; font-weight: bold; }
-        .contact-info { padding: 2rem 1rem; background: #fff; text-align: center; border-top: 1px solid #eee; }
-        footer { background: #222; color: #ccc; text-align: center; padding: 3rem 1rem; font-size: 0.9rem; }
-        footer a { color: white; text-decoration: none; }
-        .geo-tags { margin-top: 15px; font-size: 0.8rem; color: #777; }
-        @media (max-width: 600px) { .hero h2 { font-size: 1.6rem; } .btn { width: 80%; } }
+        .btn-copy { background: var(--blue); }
+
+        .trust-badge {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover { background: white; }
+
+        footer {
+            margin-top: 4rem;
+            padding: 3rem 1rem;
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+        }
+        .geo { font-size: 0.8rem; margin-top: 1rem; color: #64748b; }
+        
+        @media (max-width: 600px) {
+            h2 { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Центр Чистоты — Нижний Тагил</h1>
+    <h1>💎 Центр Чистоты — Нижний Тагил</h1>
 </header>
 
 <section class="hero">
+    <div class="trust-badge">⭐ Рейтинг 4.9 на Авито (47+ отзывов)</div>
     <h2>Химчистка мебели и дезинсекция</h2>
-    <p>Профессиональный подход частного мастера в Нижнем Тагиле</p>
-    
-    <div class="trust-box">
-        ⭐ <strong>Рейтинг 4.9 на Авито</strong> (более 47 отзывов)<br>
-        <a href="https://avito.ru" target="_blank">Перейти в профиль Авито</a>
-    </div>
+    <p>Работаю профессионально, честно и на результат. Выезд во все районы города.</p>
 
-    <a href="tel:+79506422292" class="btn btn-call">📞 Позвонить мастеру</a>
-    <a href="https://vk.com/centr_cleaner_nt" target="_blank" class="btn btn-vk">Группа ВКонтакте</a>
-    <br>
-    <a href="https://wa.me" class="btn btn-wa">WhatsApp (если есть VPN)</a>
+    <div class="cta-container">
+        <!-- Кнопка Авито -->
+        <a href="https://www.avito.ru/nizhniy_tagil/predlozheniya_uslug/himchistka_divanov_matrasov_kovrov_3954171036" target="_blank" class="btn btn-avito">
+            💬 Написать на Авито
+        </a>
+        
+        <!-- Кнопка ВК -->
+        <a href="https://vk.com/id4666416" target="_blank" class="btn btn-vk">
+            👤 Написать мастеру в ВК
+        </a>
+
+        <!-- Кнопка Копирования -->
+        <button id="copyBtn" onclick="copyPhone()" class="btn btn-copy">
+            📞 <span id="btnText">Скопировать номер телефона</span>
+        </button>
+    </div>
 </section>
 
 <section class="services">
     <div class="card">
         <h3>🛋️ Химчистка</h3>
-        <p>Глубокая чистка диванов, матрасов и кресел. Удаление пятен и запахов профессиональным оборудованием.</p>
+        <p>Удаление пятен и запахов с диванов, матрасов и кресел. Профессиональный экстрактор.</p>
     </div>
     <div class="card">
         <h3>🐜 Дезинсекция</h3>
-        <p>Уничтожение клопов и тараканов. Работаю анонимно. Безопасные препараты без резкого запаха.</p>
+        <p>Уничтожение клопов и тараканов. Анонимно. Эффективные препараты.</p>
     </div>
     <div class="card">
-        <h3>🌫️ Озонация</h3>
-        <p>Устранение запахов табака, гари, плесени. Стерилизация воздуха в квартирах и авто.</p>
+        <h3>🌬️ Озонация</h3>
+        <p>Устранение любых запахов и стерилизация помещений без химии.</p>
     </div>
-</section>
-
-<section class="contact-info">
-    <h3>Контактные данные:</h3>
-    <p>📱 Телефон: <strong>+7 (950) 642-22-92</strong></p>
-    <p>📧 Email: <a href="mailto:1DimonNT@gmail.com">1DimonNT@gmail.com</a></p>
-    <p>📍 Работаю по всему Нижнему Тагилу (выезд бесплатный)</p>
 </section>
 
 <footer>
-    <p><strong>Центр Чистоты — Ваш мастер в Нижнем Тагиле</strong></p>
-    <p>
-        <a href="https://vk.com/centr_cleaner_nt">ВКонтакте</a> | 
-        <a href="https://avito.ru">Авито</a> | 
-        <a href="https://2gis.ru">2ГИС</a>
-    </p>
-    <div class="geo-tags">
-        Районы обслуживания: ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель, Северный.
+    <p><strong>Центр Чистоты НТ</strong> | Дмитрий</p>
+    <p>Email: 1DimonNT@gmail.com</p>
+    <div class="geo">
+        ГГМ • Вагонка • Центр • Выя • Тагилстрой • Старатель
     </div>
-    <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.5;">&copy; 2024-2026 Центр Чистоты НТ. Все права защищены.</p>
 </footer>
+
+<script>
+    function copyPhone() {
+        const phone = "+79506422292";
+        navigator.clipboard.writeText(phone).then(() => {
+            const btnText = document.getElementById('btnText');
+            const btn = document.getElementById('copyBtn');
+            btnText.innerText = "Номер скопирован!";
+            btn.style.background = "#10b981";
+            
+            setTimeout(() => {
+                btnText.innerText = "Скопировать номер телефона";
+                btn.style.background = "#1e3a8a";
+            }, 3000);
+        });
+    }
+</script>
 
 </body>
 </html>
