@@ -3,34 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Акарицидная обработка от клещей в Нижнем Тагиле | Дмитрий</title>
-    <meta name="description" content="Уничтожение клещей на участке. Мотоопрыскиватель Stihl SR 430. Обработка садов, дач, придомовых территорий. Безопасно для людей и животных. +7 (950) 642-22-92.">
-    <style>
-        :root { --green: #059669; --bg: #f0fdf4; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #1e293b; line-height: 1.6; }
-        .breadcrumbs { padding: 15px 20px; background: white; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
-        .content { background: white; padding: 2rem; border-radius: 20px; }
-        .btn-call { background: var(--green); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; display: inline-block; margin: 10px; }
-    </style>
+    <meta name="description" content="Уничтожение клещей на дачных и придомовых участках. Мотоопрыскиватель Stihl SR 430, препарат Циперметрин. Цена от 2000₽ за участок до 6 соток. Выезд.">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="site-header"><div class="header-content"><h1>Обработка участков от клещей</h1><p>Защитите себя и близких от энцефалита и боррелиоза</p></div></div>
     <nav class="breadcrumbs"><a href="/">Главная</a><span>/</span><span>Обработка от клещей</span></nav>
     <div class="container">
-        <div class="content">
-            <h1>Акарицидная обработка участков от клещей</h1>
-            <p>Обрабатываю дачные и придомовые участки в Нижнем Тагиле и пригороде. Работаю на мощном мотоопрыскивателе <strong>Stihl SR 430</strong> — он создает густое облако препарата, которое проникает в каждую травинку и куст.</p>
-            <h2>Преимущества:</h2>
+        <div class="content-card">
+            <h1>Акарицидная обработка участков в Нижнем Тагиле и области</h1>
+            <p>Начинается сезон! Обрабатываю сертифицированным препаратом Циперметрин с помощью мотоопрыскивателя Stihl SR 430. Обработка создаёт защитный барьер на 1–1,5 месяца.</p>
+            
+            <h2>Цены на обработку от клещей</h2>
+            <table class="price-table">
+                <tr><th>Площадь участка</th><th>Стоимость</th></tr>
+                <tr><td>До 6 соток (1 участок)</td><td>2 000 ₽</td></tr>
+                <tr><td>7–15 соток</td><td>3 000–5 000 ₽</td></tr>
+                <tr><td>16–23 сотки</td><td>5 000–8 000 ₽</td></tr>
+                <tr><td>24–29 соток</td><td>8 000–12 000 ₽</td></tr>
+                <tr><td>30+ соток</td><td>400 ₽/сотка</td></tr>
+            </table>
+            <h3>Скидки для нескольких участков (кооперативы)</h3>
             <ul>
-                <li>Профессиональные препараты с длительным остаточным действием (до 45 дней)</li>
-                <li>Одновременная обработка от клещей, комаров и садовых вредителей</li>
-                <li>Безопасно для пчел и домашних животных (после высыхания)</li>
-                <li>Выезд за город: +40 руб/км от Нижнего Тагила</li>
+                <li>3–5 участков: 1 900 ₽ за участок</li>
+                <li>6–10 участков: 1 800 ₽ за участок + ваш участок бесплатно</li>
+                <li>11–20 участков: 1 700 ₽ за участок</li>
+                <li>20+ участков: 1 400 ₽ за участок + ваш участок бесплатно</li>
             </ul>
-            <div style="text-align: center;">
-                <a href="tel:+79506422292" class="btn-call">📞 Заказать обработку</a>
-                <a href="https://vk.ru/1dimonnt" target="_blank" class="btn-call" style="background:#0077ff;">✏️ Написать в ВК</a>
+            <div class="options">
+                <h3>Дополнительные услуги</h3>
+                <label><input type="checkbox" id="doubleAkar"> Усиленная обработка (2 препарата) — +500 ₽</label><br>
+                <label><input type="checkbox" id="barrierAkar"> Барьерная обработка по периметру участка — +500–1 000 ₽</label><br>
+                <label><input type="checkbox" id="treesAkar"> Обработка деревьев — +500–1 000 ₽</label>
+            </div>
+            <div class="price-note">🚗 Выезд за город: +40 ₽ за 1 км от Нижнего Тагила.</div>
+
+            <h2>Меры безопасности</h2>
+            <ul>
+                <li>Во время обработки на участке не должно быть людей и животных</li>
+                <li>После обработки нельзя находиться на участке 3 часа (полный допуск через 3 дня)</li>
+                <li>Запрещено собирать грибы, ягоды, травы в течение 2 недель</li>
+                <li>Предупредить соседей-пчеловодов за 2 дня</li>
+            </ul>
+
+            <h2>Форма заказа</h2>
+            <div class="order-form">
+                <form id="akarForm">
+                    <div class="form-group"><label>Имя</label><input type="text" id="nameAkar"></div>
+                    <div class="form-group"><label>Контакты</label><input type="text" id="contactAkar"></div>
+                    <div class="form-group"><label>Площадь участка (соток)</label><input type="number" id="sotki"></div>
+                    <div class="form-group"><label>Расстояние от Тагила (км)</label><input type="number" id="km" value="0"></div>
+                    <button type="button" class="btn btn-green" onclick="sendAkarToVK()">Отправить заявку в VK</button>
+                </form>
+            </div>
+
+            <h2>Статьи по обработке от клещей</h2>
+            <div class="blog-grid">
+                <div class="blog-card"><h3><a href="/blog/kleschi/akaricidnaya-obrabotka-chto-eto.html">Что такое акарицидная обработка?</a></h3></div>
+                <div class="blog-card"><h3><a href="/blog/kleschi/kogda-provodit-obrabotku-ot-kleschey.html">Когда проводить обработку от клещей?</a></h3></div>
+                <div class="blog-card"><h3><a href="/blog/kleschi/mery-bezopasnosti-pri-obrabotke.html">Меры безопасности при акарицидной обработке</a></h3></div>
+                <div class="blog-card"><h3><a href="/blog/kleschi/bolezni-perenosimye-kleshchami.html">Болезни, переносимые клещами</a></h3></div>
             </div>
         </div>
     </div>
+    <footer>...</footer>
+    <script>
+        function sendAkarToVK() {
+            var name = document.getElementById('nameAkar').value;
+            var contact = document.getElementById('contactAkar').value;
+            var sotki = document.getElementById('sotki').value;
+            var km = document.getElementById('km').value;
+            var opts = [];
+            if(document.getElementById('doubleAkar').checked) opts.push("Усиленная (2 препарата)");
+            if(document.getElementById('barrierAkar').checked) opts.push("Барьерная");
+            if(document.getElementById('treesAkar').checked) opts.push("Обработка деревьев");
+            var text = "Заявка на акарицидную обработку%0AИмя: " + encodeURIComponent(name) + "%0AКонтакты: " + encodeURIComponent(contact) + "%0AСоток: " + encodeURIComponent(sotki) + "%0AКм от города: " + encodeURIComponent(km) + "%0AДоп. опции: " + encodeURIComponent(opts.join(", "));
+            window.open("https://vk.com/im?sel=&text=" + text, "_blank");
+        }
+    </script>
 </body>
 </html>
