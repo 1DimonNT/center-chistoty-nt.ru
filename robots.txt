@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://center-chistoty-nt.ru/sitemap.xml
