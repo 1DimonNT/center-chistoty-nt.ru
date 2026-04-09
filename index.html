@@ -5,106 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Центр Чистоты НТ | Химчистка и Дезинсекция Нижний Тагил</title>
     <meta name="description" content="Профессиональная дезинсекция и химчистка в Нижнем Тагиле. Santoemma, Karcher, Stihl, Ozonbox. Рейтинг 4.9 на Авито.">
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
     <style>
-        :root { --blue: #1e3a8a; --green: #059669; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); color: #1e293b; line-height: 1.5; }
-        header { background: white; padding: 1rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .hero { padding: 2rem 1rem; text-align: center; background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); border-bottom: 1px solid #e2e8f0; }
-        .trust-badge { background: white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; font-size: 0.9rem; }
-        .trust-badge a { color: #b45309; text-decoration: none; font-weight: bold; }
-        .cta-grid { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 1.5rem 0; }
-        .btn { width: 100%; max-width: 320px; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; transition: 0.2s; font-size: 1rem; box-sizing: border-box; }
+        :root { --blue: #1e3a8a; --green: #10b981; --bg: #f8fafc; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--bg); color: #1e293b; overflow-x: hidden; }
+        
+        /* Видео-фон */
+        .hero-section { position: relative; height: 80vh; min-height: 500px; display: flex; align-items: center; justify-content: center; overflow: hidden; color: white; text-align: center; }
+        #hero-vid { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1; transform: translate(-50%, -50%); object-fit: cover; filter: brightness(0.5); }
+        
+        .hero-content { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); max-width: 600px; margin: 0 1rem; }
+        
+        .nav-header { background: white; padding: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 10px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-header img { height: 40px; border-radius: 50%; }
+
+        .btn { width: 100%; max-width: 320px; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; transition: 0.3s; margin: 10px auto; }
         .btn-avito { background: #ff5a10; }
         .btn-vk { background: #0077ff; }
         .btn-phone { background: #334155; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 1rem; box-sizing: border-box; }
-        .section { background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .section h2 { color: var(--blue); border-left: 4px solid var(--green); padding-left: 12px; margin-top: 0; font-size: 1.3rem; }
-        .price-note { background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 12px; color: #991b1b; margin-top: 1rem; font-weight: 500; font-size: 0.9rem; text-align: center; }
-        .price-val { white-space: nowrap; font-weight: 700; color: #b91c1c; }
-        .vk-feed { display: flex; flex-direction: column; gap: 15px; align-items: center; margin-top: 20px; }
-        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.85rem; }
-        footer a { color: #fff; text-decoration: none; }
-        #toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 10px 20px; border-radius: 50px; display: none; z-index: 1000; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 1rem; }
+        
+        .price-note { background: #fef2f2; border: 1px solid #fecaca; padding: 15px; border-radius: 15px; color: #991b1b; text-align: center; grid-column: 1 / -1; font-weight: bold; }
+        
+        footer { background: #0f172a; color: white; text-align: center; padding: 3rem 1rem; margin-top: 2rem; }
+        #toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 10px 20px; border-radius: 50px; display: none; z-index: 2000; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1 style="margin:0; font-size: 1.2rem;">💎 Центр Чистоты НТ</h1>
-</header>
+<div class="nav-header">
+    <img src="/img/logo.png" alt="Логотип Центр Чистоты">
+    <h1 style="margin:0; font-size: 1.2rem; color: var(--blue);">Центр Чистоты НТ</h1>
+</div>
 
-<section class="hero">
-    <div class="trust-badge">
-        <a href="https://avito.ru" target="_blank">⭐ Рейтинг 4.9 на Авито</a>
-    </div>
-    <h2 style="margin:0 0 10px 0; font-size: 1.6rem;">Дезинфекция и химчистка</h2>
-    <p style="margin:0; font-size: 0.95rem;">Нижний Тагил. Работа напрямую с мастером.</p>
-    
-    <div class="cta-grid">
-        <a href="https://avito.ru" target="_blank" class="btn btn-avito">💬 Написать на Авито</a>
-        <a href="https://vk.com" target="_blank" class="btn btn-vk">👤 Написать Дмитрию в ВК</a>
-        <button onclick="copyPhone()" class="btn btn-phone">📞 +7 (950) 642-22-92</button>
+<section class="hero-section">
+    <video autoplay muted loop playsinline id="hero-vid">
+        <source src="/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h2 style="font-size: 2rem; margin: 0 0 1rem 0;">Чистота и защита вашего дома</h2>
+        <p>Профессиональная химчистка и дезинсекция в Нижнем Тагиле</p>
+        <div class="cta">
+            <a href="https://avito.ru" target="_blank" class="btn btn-avito">💬 Написать на Авито</a>
+            <button onclick="copyPhone()" class="btn btn-phone">📞 +7 (950) 642-22-92</button>
+        </div>
     </div>
 </section>
 
 <div class="container">
-    <!-- Блок: Дезинсекция -->
-    <section class="section">
-        <h2>🐜 Уничтожение насекомых</h2>
-        <p style="font-size: 0.9rem;">Клопы, тараканы, клещи. Анонимно. Профессиональное оборудование <strong>Stihl SR 430</strong> и <strong>Airofog U260</strong>.</p>
-        <a href="/dezinsekciya/" style="color: var(--green); font-weight: bold; font-size: 0.9rem;">Подробнее об обработке →</a>
-    </section>
+    <div class="card">
+        <img src="/img/him.jpg" alt="Химчистка мебели">
+        <h3>🛋️ Химчистка</h3>
+        <p>Чистка диванов и матрасов техникой Santoemma. Удаление любых пятен и запахов.</p>
+        <a href="/himchistka/" style="color: var(--blue); font-weight: bold;">Узнать цены →</a>
+    </div>
 
-    <!-- Блок: Химчистка -->
-    <section class="section">
-        <h2>🛋️ Химчистка мебели</h2>
-        <p style="font-size: 0.9rem;">Глубокая чистка диванов и матрасов техникой <strong>Santoemma</strong> и <strong>Karcher</strong>. Удаление запахов.</p>
-        <a href="/himchistka/" style="color: var(--green); font-weight: bold; font-size: 0.9rem;">Цены на химчистку →</a>
-    </section>
+    <div class="card">
+        <img src="/img/dez.jpg" alt="Дезинсекция">
+        <h3>🐜 Дезинсекция</h3>
+        <p>Уничтожение клопов и тараканов. Stihl SR 430. Полная анонимность и гарантия.</p>
+        <a href="/dezinsekciya/" style="color: var(--blue); font-weight: bold;">Как я работаю →</a>
+    </div>
 
-    <!-- Блок: Наши работы (ВК) -->
-    <section class="section">
-        <h2>📸 Последние работы и отзывы</h2>
-        <div class="vk-feed">
-            <div id="vk_post_-196418384_839"></div>
-            <div id="vk_post_-196418384_836"></div>
-            <div id="vk_post_-196418384_771"></div>
-        </div>
-    </section>
+    <div class="card">
+        <img src="/img/girl.jpg" alt="Клининг">
+        <h3>🧹 Клининг</h3>
+        <p>Генеральная и поддерживающая уборка. Уборка после пожаров и трупов. Озонация.</p>
+        <a href="/klining/" style="color: var(--blue); font-weight: bold;">Заказать уборку →</a>
+    </div>
 
-    <section class="section">
-        <h2>📍 Выезд и районы</h2>
-        <p style="font-size: 0.9rem;">ГГМ, Вагонка, Выя, Центр, Тагилстрой, Старатель.</p>
-        <div class="price-note">
-            🚀 Выезд за пределы города:<br><span class="price-val">+40 руб. за 1 км.</span>
-        </div>
-    </section>
+    <div class="price-note">
+        📍 Нижний Тагил и пригород. Выезд за пределы города: +40 руб./км
+    </div>
 </div>
 
 <footer>
-    <p><a href="https://vk.com" target="_blank">Центр Чистоты НТ</a> | <a href="https://2gis.com" target="_blank">Мы на 2ГИС</a></p>
-    <p>Email: <a href="mailto:1DimonNT@gmail.com">1DimonNT@gmail.com</a></p>
+    <p>Дмитрий | <a href="https://vk.com" style="color:white">Написать в ВК</a></p>
+    <p>Email: 1DimonNT@gmail.com</p>
+    <p style="opacity: 0.5; font-size: 0.8rem; margin-top: 2rem;">&copy; 2024-2026 Центр Чистоты НТ</p>
 </footer>
 
 <div id="toast">Номер скопирован!</div>
 
-<script type="text/javascript">
-  (function() {
-    VK.Widgets.Post("vk_post_-196418384_839", -196418384, 839, 'JmnluKo4MsScnGz0JKIXddJJQA');
-    VK.Widgets.Post("vk_post_-196418384_836", -196418384, 836, 'DLfrjN3LJNTIN7kk9DRURifgng');
-    VK.Widgets.Post("vk_post_-196418384_771", -196418384, 771, 'PJaItwurbuT_YnNDxsWVNSLr-Q');
-  }());
-
-  function copyPhone() {
-    const num = "+79506422292";
-    navigator.clipboard.writeText(num).then(() => {
-        const toast = document.getElementById('toast');
-        toast.style.display = 'block';
-        setTimeout(() => { toast.style.display = 'none'; }, 2500);
-    });
-  }
+<script>
+    function copyPhone() {
+        const num = "+79506422292";
+        navigator.clipboard.writeText(num).then(() => {
+            const toast = document.getElementById('toast');
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2500);
+        });
+    }
 </script>
 
 </body>
