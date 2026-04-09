@@ -3,118 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центр Чистоты НТ | Химчистка, Дезинсекция, Клининг в Нижнем Тагиле</title>
-    <meta name="description" content="Профессиональная химчистка мебели, уничтожение клопов и тараканов, клининг и озонация в Нижнем Тагиле. Работаем с гарантией. Дмитрий, +7 (950) 642-22-92.">
-    <meta name="keywords" content="химчистка мебели Нижний Тагил, дезинсекция Нижний Тагил, уничтожение клопов, клининг Нижний Тагил, озонация, уборка после ремонта">
+    <title>Центр Чистоты НТ | Химчистка, Дезинсекция, Клининг Нижний Тагил</title>
+    <meta name="description" content="Дмитрий: химчистка диванов, уничтожение клопов, клининг, озонация в Нижнем Тагиле. Оборудование Stihl, Santoemma. Честные отзывы на Авито. +7 (950) 642-22-92.">
+    <meta name="keywords" content="химчистка мебели Нижний Тагил, дезинсекция Нижний Тагил, уничтожение клопов, клининг, озонация, уборка после ремонта">
     <style>
         :root { --blue: #1e3a8a; --green: #10b981; --bg: #f8fafc; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: #1e293b; overflow-x: hidden; }
-        
-        /* Шапка */
-        .nav-header { background: white; padding: 12px 20px; display: flex; align-items: center; justify-content: center; gap: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #1e293b; overflow-x: hidden; }
+        .nav-header { background: white; padding: 12px 20px; display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
         .nav-header img { height: 50px; width: auto; border-radius: 12px; }
-        .nav-header h1 { font-size: 1.4rem; color: #1e3a8a; margin: 0; }
-        
-        /* Hero блок с видео */
+        .nav-header h1 { font-size: 1.3rem; color: #1e3a8a; }
         .hero-section { position: relative; width: 100%; min-height: 85vh; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #001529; }
         #hero-vid { position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover; filter: brightness(0.45); z-index: 1; }
-        .hero-content { position: relative; z-index: 2; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px); padding: 40px 25px; border-radius: 28px; border: 1px solid rgba(255,255,255,0.2); width: 90%; max-width: 550px; text-align: center; margin: 20px; }
-        .hero-content h2 { font-size: 1.8rem; margin-bottom: 15px; color: white; }
+        .hero-content { position: relative; z-index: 2; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); padding: 40px 25px; border-radius: 28px; width: 90%; max-width: 550px; text-align: center; margin: 20px; }
+        .hero-content h2 { color: white; margin-bottom: 15px; font-size: 1.8rem; }
         .hero-content p { color: #f1f5f9; margin-bottom: 25px; }
-        
-        /* Кнопки */
-        .btn { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 320px; margin: 10px auto; padding: 14px 20px; border-radius: 60px; text-decoration: none; font-weight: bold; color: white; border: none; cursor: pointer; transition: 0.2s; font-size: 1rem; gap: 8px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; max-width: 320px; margin: 10px auto; padding: 14px 20px; border-radius: 60px; text-decoration: none; font-weight: bold; color: white; transition: 0.2s; border: none; cursor: pointer; font-size: 1rem; }
         .btn-avito { background: #ff5a10; }
         .btn-vk { background: #0077ff; }
         .btn-phone { background: #334155; }
+        .btn-2gis { background: #4caf50; }
         .btn:hover { transform: scale(1.02); opacity: 0.95; }
-        
-        /* Карточки услуг */
         .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .card { background: white; border-radius: 28px; padding: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); text-align: center; transition: 0.2s; border: 1px solid #eef2ff; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .card { background: white; border-radius: 28px; padding: 25px; text-align: center; transition: 0.2s; border: 1px solid #eef2ff; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 35px rgba(0,0,0,0.1); }
         .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 20px; margin-bottom: 20px; background: #f1f5f9; }
-        .card h3 { font-size: 1.6rem; margin: 15px 0 10px; color: #0f172a; }
-        .card p { color: #475569; margin-bottom: 20px; line-height: 1.5; }
+        .card h3 { font-size: 1.5rem; margin: 15px 0 10px; }
+        .card p { color: #475569; margin-bottom: 20px; }
         .card a { color: #0284c7; font-weight: 600; text-decoration: none; }
-        
         footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 40px 20px; }
         footer a { color: #38bdf8; text-decoration: none; }
         #toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 12px 24px; border-radius: 50px; display: none; z-index: 9999; font-weight: bold; }
-        
-        @media (max-width: 640px) {
-            .nav-header h1 { font-size: 1.1rem; }
-            .hero-content h2 { font-size: 1.4rem; }
-            .container { padding: 40px 15px; gap: 20px; }
-        }
+        @media (max-width: 640px) { .hero-content h2 { font-size: 1.4rem; } .nav-header h1 { font-size: 1rem; } }
     </style>
 </head>
 <body>
-
 <header class="nav-header">
-    <!-- Исправлен путь к логотипу -->
-    <img src="img/logo-centr-chistoty-white-bg.png" alt="Центр Чистоты Нижний Тагил логотип">
-    <h1>Центр Чистоты НТ | Нижний Тагил</h1>
+    <img src="img/logo-centr-chistoty-white-bg.png" alt="Центр Чистоты Нижний Тагил">
+    <h1>Центр Чистоты НТ | Дмитрий</h1>
 </header>
-
 <section class="hero-section">
-    <!-- Исправлено видео: muted, playsinline, корректный путь -->
     <video autoplay muted loop playsinline id="hero-vid">
         <source src="video/video-himchistka-mebeli-nizhniy-tagil-1.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
     </video>
     <div class="hero-content">
         <h2>Чистота, безопасность и свежесть вашего дома</h2>
-        <p>Профессиональная химчистка, дезинсекция и клининг в Нижнем Тагиле от мастера с опытом. Гарантия качества.</p>
-        <a href="https://avito.ru" target="_blank" rel="noopener" class="btn btn-avito">💬 Написать на Авито</a>
-        <a href="https://vk.com" target="_blank" rel="noopener" class="btn btn-vk">👤 Написать в ВК</a>
+        <p>Химчистка, дезинсекция, клининг в Нижнем Тагиле от мастера Дмитрия. Гарантия качества. Честные отзывы на Авито.</p>
+        <a href="https://www.avito.ru/profile/rating?page_from=profile_menu" target="_blank" rel="noopener" class="btn btn-avito">⭐ Читать отзывы на Авито</a>
+        <a href="https://vk.ru/centr_cleaner_nt" target="_blank" rel="noopener" class="btn btn-vk">📱 Наша группа ВКонтакте</a>
+        <a href="https://2gis.ru/ntagil/user/b3045f321bdc499189825612b6a7ea3d" target="_blank" rel="noopener" class="btn btn-2gis">📍 Отзывы на 2ГИС</a>
         <button onclick="copyPhone()" class="btn btn-phone">📞 Скопировать номер +7 (950) 642-22-92</button>
     </div>
 </section>
-
 <main>
     <div class="container">
         <article class="card">
-            <img src="img/himchistka-mebeli-nizhniy-tagil-4.jpg" alt="Химчистка дивана в Нижнем Тагиле профессиональное оборудование">
+            <img src="img/himchistka-mebeli-nizhniy-tagil-4.jpg" alt="Химчистка дивана Нижний Тагил">
             <h3>🛋️ Химчистка мебели</h3>
-            <p>Удаляем любые пятна, запахи и аллергены с диванов, кресел, матрасов. Экстракторная чистка Santoemma. Быстро, безопасно, с выездом на дом.</p>
-            <a href="himchistka/" aria-label="Подробнее о химчистке">Узнать подробнее →</a>
+            <p>Удаляю пятна, запахи, клещей. Экстракторная чистка Santoemma. Диваны, кресла, матрасы, ковры. Выезд на дом.</p>
+            <a href="himchistka/">Подробнее о химчистке →</a>
         </article>
-
         <article class="card">
-            <img src="img/unichtozhenie-nasekomyh-nizhniy-tagil-2.jpg" alt="Дезинсекция уничтожение клопов и тараканов">
+            <img src="img/unichtozhenie-nasekomyh-nizhniy-tagil-2.jpg" alt="Уничтожение клопов и тараканов">
             <h3>🐜 Дезинсекция</h3>
-            <p>Уничтожение клопов, тараканов, муравьев, блох. Оборудование Stihl SR 430, Airofog. Анонимно. Обработка холодным/горячим туманом. Гарантия.</p>
-            <a href="dezinsekciya/" aria-label="Подробнее о дезинсекции">Как я работаю →</a>
+            <p>Клопы, тараканы, муравьи, блохи. Оборудование Stihl SR 430, холодный туман. Анонимно, с гарантией.</p>
+            <a href="dezinsekciya/">Как я уничтожаю насекомых →</a>
         </article>
-
         <article class="card">
-            <img src="img/uborka-klining-nizhniy-tagil-2.jpg" alt="Клининг и уборка квартир после ремонта">
+            <img src="img/uborka-klining-nizhniy-tagil-2.jpg" alt="Клининг и уборка">
             <h3>🧹 Клининг и озонация</h3>
-            <p>Генеральная уборка, клининг после ремонта, удаление запахов озоном (озонатор OZONBOX AIR-15). Работаем со сложными случаями.</p>
-            <a href="klining/" aria-label="Подробнее о клининге">Все услуги →</a>
+            <p>Уборка квартир, домов, после ремонта. Озонатор OZONBOX AIR-15 — удаление любых запахов (табак, гарь, животные).</p>
+            <a href="klining/">Все услуги клининга →</a>
         </article>
     </div>
 </main>
-
 <footer>
-    <p>ИП Дмитрий | <a href="https://vk.com" target="_blank" rel="noopener">Связаться в ВКонтакте</a> | <a href="tel:+79506422292">+7 (950) 642-22-92</a></p>
-    <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2025 Центр Чистоты Нижний Тагил. Услуги химчистки, дезинсекции, клининга.</p>
+    <p>Дмитрий | <a href="https://vk.ru/1dimonnt" target="_blank">Написать мастеру в ВК</a> | <a href="tel:+79506422292">+7 (950) 642-22-92</a></p>
+    <p style="margin-top: 10px;">Работаю в Нижнем Тагиле и области. Честные цены, современное оборудование.</p>
+    <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2025 Центр Чистоты НТ</p>
 </footer>
-
 <div id="toast">Номер +7 (950) 642-22-92 скопирован!</div>
-
 <script>
-    function copyPhone() {
-        navigator.clipboard.writeText("+79506422292").then(() => {
-            const toast = document.getElementById('toast');
-            toast.style.display = 'block';
-            setTimeout(() => { toast.style.display = 'none'; }, 3000);
-        }).catch(() => {
-            alert("Не удалось скопировать номер. +7 (950) 642-22-92");
-        });
-    }
+    function copyPhone() { navigator.clipboard.writeText("+79506422292").then(() => { let t = document.getElementById('toast'); t.style.display = 'block'; setTimeout(() => { t.style.display = 'none'; }, 3000); }); }
 </script>
 </body>
 </html>
