@@ -1,23 +1,12 @@
-# Разрешаем сканирование всем роботам
 User-agent: *
-
-# Запрещаем служебные страницы (их не нужно в поиске)
+Allow: /
 Disallow: /admin/
 Disallow: /cgi-bin/
-Disallow: /?s=
-Disallow: /search
+Disallow: /img/   # если хотите скрыть картинки (не рекомендую)
+Disallow: /video/ # если хотите скрыть видео
 
-# Разрешаем всё остальное
-Allow: /
-
-# ----- СПЕЦИАЛЬНЫЕ ДИРЕКТИВЫ ДЛЯ ЯНДЕКСА -----
-# Указываем главное зеркало сайта (без www)
 User-agent: YandexBot
 Host: https://center-chistoty-nt.ru
+Crawl-delay: 1
 
-# Задержка между запросами робота (чтобы не нагружать хостинг)
-Crawl-delay: 2
-
-# ----- ОБЩАЯ ДИРЕКТИВА ДЛЯ ВСЕХ -----
-# Указываем путь к карте сайта
 Sitemap: https://center-chistoty-nt.ru/sitemap.xml
