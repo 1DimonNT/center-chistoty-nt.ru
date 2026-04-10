@@ -42,10 +42,9 @@
 | **Вставки** | Rutube (видеоотзывы), iframe |
 
 ---
-
 ## 📁 Структура проекта
+
 center-chistoty-nt.ru/
-│
 ├── index.html # Главная страница
 ├── himchistka/
 │ └── index.html # Химчистка мебели
@@ -59,7 +58,12 @@ center-chistoty-nt.ru/
 ├── css/
 │ └── style.css # Единый файл стилей
 ├── img/ # Изображения (фото, иконки)
-└── .nojekyll # Для GitHub Pages
+├── video/ # Видеоотзывы
+├── .gitignore
+├── .nojekyll # Для GitHub Pages
+├── CNAME # Кастомный домен
+├── robots.txt
+└── sitemap.xml
 
 ---
 
