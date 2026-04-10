@@ -43,28 +43,24 @@
 
 ---
 ## 📁 Структура проекта
+**Структура проекта:**
 
-center-chistoty-nt.ru/
-├── index.html # Главная страница
-├── himchistka/
-│ └── index.html # Химчистка мебели
-├── dezinsekciya/
-│ └── index.html # Дезинсекция
-├── klining/
-│ └── index.html # Клининг и озонация
-├── obrabotka-ot-kleschey/
-│ └── index.html # Акарицидная обработка
-├── blog/ # Статьи (по категориям)
-├── css/
-│ └── style.css # Единый файл стилей
-├── img/ # Изображения (фото, иконки)
-├── video/ # Видеоотзывы
-├── .gitignore
-├── .nojekyll # Для GitHub Pages
-├── CNAME # Кастомный домен
-├── robots.txt
-└── sitemap.xml
-
+| Путь | Описание |
+|------|----------|
+| `/index.html` | Главная страница |
+| `/himchistka/index.html` | Химчистка мебели |
+| `/dezinsekciya/index.html` | Дезинсекция |
+| `/klining/index.html` | Клининг и озонация |
+| `/obrabotka-ot-kleschey/index.html` | Акарицидная обработка |
+| `/blog/` | Статьи (по категориям) |
+| `/css/style.css` | Единый файл стилей |
+| `/img/` | Изображения (фото, иконки) |
+| `/video/` | Видеоотзывы |
+| `/.gitignore` | Git исключения |
+| `/.nojekyll` | Для GitHub Pages |
+| `/CNAME` | Кастомный домен |
+| `/robots.txt` | Настройки для роботов |
+| `/sitemap.xml` | Карта сайта |
 ---
 
 ## 🚀 Особенности реализации
