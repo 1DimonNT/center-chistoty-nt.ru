@@ -3,27 +3,45 @@
 </h1>
 
 <h3 align="center">
-  🧹 Профессиональная химчистка | 🐜 Дезинсекция | 🧹 Клининг и озонация | 🕷️ Акарицидная обработка
+  🧹 Профессиональная химчистка | 🐜 Дезинсекция | 🧼 Клининг | 💨 Озонация | 🕷️ Акарицидная обработка
 </h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Нижний_Тагил-локация-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/5+_лет_опыта-успешно-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/5%2B_лет_опыта-успешно-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/1000%2B_заказов-выполнено-success?style=flat-square" />
   <img src="https://komarev.com/ghpvc/?username=center-chistoty-nt&style=flat-square&color=0284C7" />
 </p>
 
 ---
 
+## 👨‍🔧 О мастере
+
+Меня зовут **Дмитрий Иванцов**, я частный мастер из Нижнего Тагила.
+
+**Образование:**
+- 🎓 **Уральский Государственный Педагогический Университет** — предприниматель-технолог
+- 🧪 **QA.GURU** — инженер по автоматизации тестирования на Python
+
+**Почему я:**
+- ✅ Более 5 лет опыта в сфере клининга и дезинсекции
+- ✅ Выполнено более 1000 заказов
+- ✅ Профессиональное оборудование (Santoemma, Stihl SR 430, OZONBOX AIR-15)
+- ✅ Работаю по договору, предоставляю гарантию
+- ✅ Совмещаю практический опыт с техническим подходом к качеству
+
+---
+
 ## 📋 О проекте
 
-**«Центр Чистоты НТ»** — это сайт-визитка частного мастера Дмитрия, предоставляющего услуги по:
+**«Центр Чистоты НТ»** — это сайт-визитка, предоставляющий услуги по:
 
 | Услуга | Описание |
 |--------|----------|
 | 🧼 **Химчистка мебели** | Диваны, кресла, матрасы, ковры. Оборудование Santoemma |
 | 🐜 **Дезинсекция** | Уничтожение клопов, тараканов, муравьёв, блох. Stihl SR 430, Airofog U260 |
-| 🧹 **Клининг и озонация** | Генеральная уборка, после ремонта, спец-клининг. Озонатор OZONBOX AIR-15 |
+| 🧹 **Клининг** | Генеральная уборка, после ремонта, спец-клининг |
+| 💨 **Озонация** | Удаление запахов, дезинфекция. Озонатор OZONBOX AIR-15 |
 | 🕷️ **Акарицидная обработка** | Уничтожение клещей на участках. Мотоопрыскиватель Stihl SR 430 |
 
 > 🎯 **Миссия:** Чистота и безопасность вашего дома — моя работа
@@ -37,30 +55,32 @@
 | **Frontend** | HTML5, CSS3 |
 | **Стили** | Кастомные переменные, адаптивная вёрстка (media queries) |
 | **Метрики** | Yandex.Metrika |
-| **Микроразметка** | Schema.org (LocalBusiness) |
+| **Микроразметка** | Schema.org (LocalBusiness, Service, Article) |
 | **Хостинг** | GitHub Pages |
 | **Вставки** | Rutube (видеоотзывы), iframe |
 
 ---
+
 ## 📁 Структура проекта
-**Структура проекта:**
 
 | Путь | Описание |
 |------|----------|
 | `/index.html` | Главная страница |
 | `/himchistka/index.html` | Химчистка мебели |
 | `/dezinsekciya/index.html` | Дезинсекция |
-| `/klining/index.html` | Клининг и озонация |
+| `/klining/index.html` | Клининг |
+| `/ozonaciya/index.html` | Озонация |
 | `/obrabotka-ot-kleschey/index.html` | Акарицидная обработка |
-| `/blog/` | Статьи (по категориям) |
+| `/blog/index.html` | Главная блога |
+| `/blog/himchistka/` | Статьи по химчистке (4) |
+| `/blog/dezinsekciya/` | Статьи по дезинсекции (5) |
+| `/blog/ozonaciya/` | Статьи по озонации (4) |
+| `/blog/kleschi/` | Статьи по клещам (4) |
 | `/css/style.css` | Единый файл стилей |
 | `/img/` | Изображения (фото, иконки) |
-| `/video/` | Видеоотзывы |
-| `/.gitignore` | Git исключения |
-| `/.nojekyll` | Для GitHub Pages |
-| `/CNAME` | Кастомный домен |
 | `/robots.txt` | Настройки для роботов |
 | `/sitemap.xml` | Карта сайта |
+
 ---
 
 ## 🚀 Особенности реализации
@@ -82,7 +102,7 @@
 - Блок `<details>` для дополнительных видео (экономия трафика)
 
 ### ✅ Микроразметка Schema.org
-- Локальный бизнес с адресом, телефоном, часами работы
+- LocalBusiness, Service, Article — полное покрытие для SEO
 
 ---
 
@@ -92,9 +112,10 @@
 |---------|------------|
 | **Title** | Уникальные заголовки для каждой страницы |
 | **Description** | Мета-описания с ключевыми словами |
-| **Keywords** | Ключевые слова для поисковых систем |
 | **H1-H2** | Правильная иерархия заголовков |
 | **Alt-теги** | Все изображения имеют описания |
+| **Хлебные крошки** | На всех страницах для навигации и SEO |
+| **Schema.org** | Article, Service, LocalBusiness |
 | **Скорость загрузки** | `loading="lazy"`, сжатые изображения |
 
 ---
@@ -102,29 +123,14 @@
 ## 🔧 Локальный запуск
 
 ```bash
+# Клонировать репозиторий
 git clone https://github.com/1DimonNT/center-chistoty-nt.ru.git
+
+# Перейти в папку проекта
 cd center-chistoty-nt.ru
+
+# Запустить локальный сервер (Python 3)
+python -m http.server 8000
+
+# Или через live-server (Node.js)
 npx live-server
-
-📞 Контакты мастера
-<p align="center"> <a href="https://vk.ru/1dimonnt"><img src="https://img.shields.io/badge/VK-Написать_мастеру-0077FF?style=for-the-badge&logo=vk&logoColor=white" /></a> <a href="tel:+79506422292"><img src="https://img.shields.io/badge/Phone-+7(950)642-22-92-34A853?style=for-the-badge&logo=google-meet&logoColor=white" /></a> <a href="https://www.avito.ru/profile/rating?page_from=profile_menu"><img src="https://img.shields.io/badge/Avito-Отзывы-0A9EDC?style=for-the-badge&logo=avito&logoColor=white" /></a> <a href="https://2gis.ru/ntagil/user/b3045f321bdc499189825612b6a7ea3d"><img src="https://img.shields.io/badge/2ГИС-Отзывы-FC3B3B?style=for-the-badge&logo=2gis&logoColor=white" /></a> </p>
-🧪 QA & Тестирование
-Данный сайт является реальным коммерческим проектом, который я разработал и поддерживаю. Он демонстрирует навыки:
-
-🎯 Вёрстка семантической адаптивной страницы
-
-🎯 Оптимизация для поисковых систем (SEO)
-
-🎯 Интеграция с Yandex.Metrika
-
-🎯 Микроразметка Schema.org
-
-🎯 Работа с Git и GitHub Pages
-
-🎯 UI/UX для конверсии (формы заказа, видеоотзывы)
-
-📄 Лицензия
-© 2026 Центр Чистоты НТ. Все права защищены.
-
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" /> </p> ```
-
