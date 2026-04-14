@@ -1089,3 +1089,38 @@ body {
         padding: 6px 4px;
     }
 }
+
+/* ============================================ */
+/* ИСПРАВЛЕНИЕ STICKY NAV ДЛЯ ТЕЛЕФОНОВ */
+/* ============================================ */
+
+.sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Убедитесь, что родительские элементы не блокируют sticky */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    height: auto !important;
+}
+
+.container,
+.content-card {
+    overflow: visible !important;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .sticky-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
