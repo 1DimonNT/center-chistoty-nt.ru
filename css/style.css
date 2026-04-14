@@ -39,7 +39,9 @@ html, body {
     color: var(--text-dark);
     line-height: 1.6;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
+    overflow-y: auto;
+    height: auto;
 }
 
 img {
@@ -1101,16 +1103,9 @@ body {
     z-index: 1000;
 }
 
-/* Убедитесь, что родительские элементы не блокируют sticky */
-html, body {
-    overflow-x: hidden;
-    overflow-y: auto !important;
-    height: auto !important;
-}
-
 .container,
 .content-card {
-    overflow: visible !important;
+    overflow: visible;
 }
 
 /* Для мобильных устройств */
