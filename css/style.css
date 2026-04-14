@@ -12,13 +12,11 @@
     --text-muted: #64748b;
     --border: #bdd4e7;
 
-    /* Градиенты */
     --gradient-blue: linear-gradient(135deg, var(--blue-dark), var(--blue));
     --gradient-green: linear-gradient(135deg, var(--green), #047857);
     --gradient-red: linear-gradient(135deg, var(--red), #b91c1c);
     --gradient-header: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
 
-    /* Тени */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.12);
@@ -40,6 +38,8 @@ html, body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -49,7 +49,7 @@ img {
 }
 
 /* ============================================ */
-/* 3. ШАПКА САЙТА (БЕЗ ЛОГОТИПОВ, ТЕКСТ ПО ЦЕНТРУ) */
+/* 3. ШАПКА САЙТА                               */
 /* ============================================ */
 .site-header {
     position: relative;
@@ -108,13 +108,12 @@ img {
     border-bottom: 2px solid var(--gold);
 }
 
-/* Скрываем логотипы если остались */
 .header-logo {
     display: none;
 }
 
 /* ============================================ */
-/* 4. НАВИГАЦИЯ (СТИКЕР) - ОБНОВЛЕНА            */
+/* 4. НАВИГАЦИЯ                                 */
 /* ============================================ */
 .sticky-nav {
     position: sticky;
@@ -166,12 +165,11 @@ img {
 }
 
 /* ============================================ */
-/* 5. ХЛЕБНЫЕ КРОШКИ (ВИДИМЫЕ ДЛЯ SEO)          */
+/* 5. ХЛЕБНЫЕ КРОШКИ (SEO)                     */
 /* ============================================ */
 .breadcrumbs {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     padding: 0.3rem clamp(1rem, 5vw, 2rem);
     font-size: 0.8rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -181,7 +179,6 @@ img {
 .breadcrumbs a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-weight: 400;
     transition: color 0.2s;
 }
 
@@ -196,6 +193,8 @@ img {
     max-width: 1400px;
     margin: 0 auto;
     padding: clamp(1rem, 5vw, 3rem) clamp(0.75rem, 4vw, 2rem);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .content-card {
@@ -207,21 +206,20 @@ img {
     box-shadow: var(--shadow-md);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-/* Полупрозрачный слой поверх фона для читаемости текста */
 .content-card::before {
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(15, 23, 42, 0.7);
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     border-radius: 2rem;
     z-index: -1;
 }
 
-/* Текст внутри карточки */
 .content-card h2,
 .content-card h3,
 .content-card p,
@@ -249,6 +247,9 @@ img {
     z-index: 1;
 }
 
+/* ============================================ */
+/* 7. СЕТКА УСЛУГ НА ГЛАВНОЙ                    */
+/* ============================================ */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
@@ -309,71 +310,37 @@ img {
     height: 100%;
 }
 
-/* Улучшение отображения карточек в блоге */
-.blog-grid {
-    background: rgba(255, 255, 255, 0.05); /* Легкий фон всей сетки */
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.blog-card {
-    background: rgba(30, 58, 138, 0.8) !important; /* Усиливаем фон самой карточки */
-    border: 1px solid rgba(255, 215, 0, 0.3) !important;
-}
-.blog-card:hover {
-    background: rgba(2, 132, 199, 0.9) !important;
-}
 /* ============================================ */
-/* ДВУХКОЛОНОЧНЫЙ LAYOUT ДЛЯ ПРАЙСА + УСЛУГИ (SEO-ОПТИМИЗИРОВАННЫЙ) */
+/* 8. ДВУХКОЛОНОЧНЫЙ LAYOUT ДЛЯ ПРАЙСА (ОСНОВНОЙ) */
 /* ============================================ */
 .price-services-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem; /* Увеличен отступ для лучшей читаемости */
+    gap: 2rem;
     margin: 0 0 2rem 0;
     align-items: start;
 }
 
-/* КЛЮЧЕВОЕ ПРАВИЛО: предотвращает вылезание контента */
 .price-services-row > * {
     min-width: 0;
 }
 
-/* Левая колонка (таблица с ценами) */
 .price-services-row > div:first-child {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-/* Правая колонка (текст, списки, преимущества) */
 .price-services-row > div:last-child {
     margin-left: 0;
 }
 
-/* Обертка для таблицы с горизонтальной прокруткой */
-.price-services-row .table-wrapper {
-    margin: 0;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* Таблица внутри левой колонки */
-.price-services-row .price-table {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-}
-
-/* Стили для заголовков внутри сетки */
 .price-services-row h2,
 .price-services-row h3 {
     margin-top: 0;
     margin-bottom: 0.75rem;
 }
 
-/* Стили для списков (важно для SEO-текста) */
 .price-services-row ul {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
@@ -386,7 +353,7 @@ img {
 }
 
 /* ============================================ */
-/* ОСНОВНЫЕ СТИЛИ ДЛЯ ТАБЛИЦ (РАБОТАЮТ НА ВСЕХ СТРАНИЦАХ) */
+/* 9. ТАБЛИЦЫ (ОСНОВНЫЕ СТИЛИ)                 */
 /* ============================================ */
 .table-wrapper {
     width: 100%;
@@ -398,7 +365,6 @@ img {
 .price-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
     background: var(--blue-dark);
     color: white;
     border-radius: 0.75rem;
@@ -422,46 +388,21 @@ img {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* ============================================ */
-/* АДАПТИВ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
-/* ============================================ */
-@media (max-width: 768px) {
-    .price-services-row {
-        grid-template-columns: 1fr; /* Одна колонка на мобильных */
-        gap: 1.5rem;
-    }
-
-    .price-services-row > div:last-child {
-        margin-left: 0;
-    }
-
-    .price-services-row .price-table {
-        max-width: 100%;
-    }
-
-    /* Увеличиваем отступы для касаний на мобильных */
-    .price-table th,
-    .price-table td {
-        padding: 0.5rem;
-    }
+/* Стили для таблиц внутри двухколоночного блока */
+.price-services-row .table-wrapper {
+    margin: 0;
+    width: 100%;
+    overflow-x: auto;
 }
 
-@media (max-width: 480px) {
-    .price-services-row {
-        gap: 1rem;
-    }
-
-    .price-table {
-        font-size: 0.8rem;
-    }
-
-    .price-table th,
-    .price-table td {
-        padding: 0.4rem;
-    }
+.price-services-row .price-table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
 }
+
 /* ============================================ */
-/* 7. ЗАГОЛОВКИ                                 */
+/* 10. ЗАГОЛОВКИ                                */
 /* ============================================ */
 h1 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
@@ -482,9 +423,7 @@ h3 {
     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
     margin: 1.2rem 0;
 }
-/* ============================================ */
-/* ЗАГОЛОВКИ СТАТЕЙ (ЗОЛОТЫЕ)                   */
-/* ============================================ */
+
 .content-card h1 {
     color: var(--gold) !important;
     border-left: 5px solid var(--gold);
@@ -504,7 +443,6 @@ h3 {
     margin-top: 1.5rem;
 }
 
-/* Ссылки в статьях */
 .content-card a {
     color: var(--gold);
     text-decoration: underline;
@@ -514,8 +452,9 @@ h3 {
 .content-card a:hover {
     color: white;
 }
+
 /* ============================================ */
-/* 8. КНОПКИ                                    */
+/* 11. КНОПКИ                                   */
 /* ============================================ */
 .btn {
     display: inline-flex;
@@ -536,7 +475,6 @@ h3 {
     white-space: normal;
     word-break: break-word;
     text-align: center;
-    line-height: 1.4;
     min-width: 200px;
 }
 
@@ -559,43 +497,8 @@ h3 {
 }
 
 /* ============================================ */
-/* 9. ТАБЛИЦЫ ЦЕН (КОМПАКТНЫЕ)                  */
+/* 12. ПРИМЕЧАНИЯ К ЦЕНАМ                       */
 /* ============================================ */
-.price-table {
-    width: 100%;
-    max-width: 450px;
-    border-collapse: collapse;
-    margin: 1rem 0;
-    background: var(--blue-dark);
-    color: white;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
-    line-height: 1.3;
-}
-
-.price-table th {
-    background: #3b82f6;
-    font-weight: 700;
-    padding: 0.6rem 0.75rem;
-    text-align: left;
-    font-size: 0.9rem;
-    width: 60%;
-}
-
-.price-table th:last-child {
-    width: 40%;
-}
-
-.price-table td {
-    border: 1px solid rgba(189, 212, 231, 0.2);
-    padding: 0.5rem 0.75rem;
-}
-
-.price-table tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.05);
-}
-
 .price-note {
     background: rgba(254, 243, 199, 0.95);
     padding: clamp(0.8rem, 3vw, 1.2rem);
@@ -615,23 +518,8 @@ h3 {
     padding: 1rem;
 }
 
-@media (max-width: 640px) {
-    .price-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        max-width: 100%;
-    }
-
-    .price-table th,
-    .price-table td {
-        padding: 0.4rem 0.6rem;
-    }
-}
-
 /* ============================================ */
-/* 10. ФОРМА ЗАКАЗА (КОМПАКТНАЯ)                */
+/* 13. ФОРМА ЗАКАЗА                             */
 /* ============================================ */
 .order-form {
     background: rgba(30, 58, 138, 0.9);
@@ -723,9 +611,13 @@ h3 {
 }
 
 /* ============================================ */
-/* 11. БЛОГ (КОМПАКТНЫЕ КАРТОЧКИ — 5 В РЯД)     */
+/* 14. БЛОГ (КАРТОЧКИ)                         */
 /* ============================================ */
 .blog-grid {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
@@ -733,12 +625,12 @@ h3 {
 }
 
 .blog-card {
-    background: var(--gradient-blue);
+    background: rgba(30, 58, 138, 0.8);
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: var(--shadow-sm);
     transition: all 0.25s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -748,6 +640,7 @@ h3 {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
     border-color: var(--gold);
+    background: rgba(2, 132, 199, 0.9);
 }
 
 .blog-category {
@@ -784,33 +677,8 @@ h3 {
     height: 100%;
 }
 
-/* Адаптив */
-@media (max-width: 1200px) {
-    .blog-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .blog-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ============================================ */
-/* 12. ГАЛЕРЕЯ (ТЁМНЫЙ ФОН)                     */
+/* 15. ГАЛЕРЕЯ                                  */
 /* ============================================ */
 .gallery-grid {
     display: grid;
@@ -857,15 +725,8 @@ h3 {
     height: 160px;
 }
 
-/* Адаптив */
-@media (max-width: 768px) {
-    .gallery-item img {
-        height: 180px;
-    }
-}
-
 /* ============================================ */
-/* 13. ВИДЕО                                    */
+/* 16. ВИДЕО                                    */
 /* ============================================ */
 .video-grid {
     display: grid;
@@ -905,7 +766,7 @@ h3 {
 }
 
 /* ============================================ */
-/* 14. ОЗОНАЦИЯ - СХЕМА (ЗОЛОТОЙ КРУПНЫЙ ШРИФТ) */
+/* 17. ОЗОНАЦИЯ - СХЕМА                         */
 /* ============================================ */
 .ozone-schema {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
@@ -924,7 +785,6 @@ h3 {
     margin-bottom: 2rem;
 }
 
-/* Крупный золотой шрифт для шагов */
 .ozone-schema p {
     background: rgba(255, 255, 255, 0.05);
     color: var(--gold);
@@ -962,20 +822,8 @@ h3 {
     font-size: inherit;
 }
 
-/* Адаптив */
-@media (max-width: 768px) {
-    .ozone-schema {
-        padding: 1.5rem 1rem;
-    }
-
-    .ozone-schema p {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-}
-
 /* ============================================ */
-/* 15. ПОДВАЛ (УВЕЛИЧЕННЫЙ)                     */
+/* 18. ПОДВАЛ                                   */
 /* ============================================ */
 footer {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -1007,7 +855,6 @@ footer a:hover {
     color: #fbbf24;
 }
 
-/* Иконки в футере */
 footer a[href*="tel:"]::before {
     content: "📞 ";
     font-size: 1.1em;
@@ -1028,26 +875,14 @@ footer a[href*="2gis"]::before {
     font-size: 1.1em;
 }
 
-/* Копирайт — чуть меньше */
 footer p:last-child {
     font-size: clamp(0.9rem, 3vw, 1.1rem);
     opacity: 0.8;
     margin-top: 1.5rem;
 }
 
-/* Адаптив для мобильных */
-@media (max-width: 480px) {
-    footer {
-        padding: 1.5rem 1rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-    }
-}
-
 /* ============================================ */
-/* 16. УТИЛИТЫ                                  */
+/* 19. УТИЛИТЫ                                  */
 /* ============================================ */
 .text-center {
     text-align: center;
@@ -1062,20 +897,40 @@ footer p:last-child {
 }
 
 /* ============================================ */
-/* 17. МЕДИА-ЗАПРОСЫ (ТОНКАЯ НАСТРОЙКА)         */
+/* 20. АДАПТИВ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ        */
 /* ============================================ */
+@media (max-width: 1200px) {
+    .blog-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .price-services-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .price-services-row > div:last-child {
+        margin-left: 0;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .site-header {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
         min-height: auto;
         padding: 1.5rem 1rem;
-    }
-
-    .header-logo img {
-        width: 100px;
-        margin: 0 auto;
     }
 
     .nav-grid {
@@ -1102,12 +957,52 @@ footer p:last-child {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 0.5rem;
+    }
+
+    .ozone-schema {
+        padding: 1.5rem 1rem;
+    }
+
+    .ozone-schema p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .price-services-row {
+        gap: 1rem;
+    }
+
+    .price-table {
+        font-size: 0.8rem;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 0.4rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
     .btn {
         width: 100%;
         white-space: normal;
+        min-width: unset;
     }
 
     .header-content h1 {
@@ -1130,6 +1025,10 @@ footer p:last-child {
     .gallery-item img {
         height: 180px;
     }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -1145,46 +1044,48 @@ footer p:last-child {
         height: 250px;
     }
 }
+
 /* ============================================ */
-/* ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ - ПЕРЕЗАПИСЬ СТИЛЕЙ */
+/* 21. ЗАПРЕТ ГОРИЗОНТАЛЬНОГО СКРОЛЛА (ВАЖНО!)  */
 /* ============================================ */
-
-.price-services-row {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 2rem !important;
-    margin: 0 0 2rem 0 !important;
-    align-items: start !important;
+body {
+    overflow-x: hidden;
+    width: 100%;
 }
 
-.price-services-row > div {
-    min-width: 0 !important;
+.container,
+.content-card,
+.price-services-row,
+.price-services-row > div,
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.price-services-row > div:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-.price-services-row > div:last-child {
-    margin-left: 0 !important;
-}
-
-.price-services-row .table-wrapper {
-    width: 100% !important;
+.table-wrapper {
     overflow-x: auto !important;
-    margin: 0 !important;
 }
 
-.price-services-row .price-table {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
+.price-table td,
+.price-table th {
+    word-break: break-word;
+    white-space: normal;
 }
 
 @media (max-width: 768px) {
-    .price-services-row {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem !important;
+    .price-table {
+        min-width: 280px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-table {
+        font-size: 12px;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 6px 4px;
     }
 }
