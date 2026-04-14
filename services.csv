@@ -1,0 +1,7 @@
+ID,Category,Name,Price,Currency,Unit,Url,Picture
+001,Химчистка,Химчистка дивана глубокая,2000,RUB,услуга,https://center-chistoty-nt.ru/himchistka/,https://center-chistoty-nt.ru/img/chistka-divana-na-domu-tagil-02.jpg
+002,Химчистка,Химчистка матраса от аллергенов,1500,RUB,услуга,https://center-chistoty-nt.ru/himchistka/,https://center-chistoty-nt.ru/img/himchistka-matrasa-ot-mochi-i-zapaha-tagil.jpg
+003,Дезинсекция,Уничтожение клопов и тараканов,2000,RUB,услуга,https://center-chistoty-nt.ru/dezinsekciya/,https://center-chistoty-nt.ru/img/professionalnaya-dezinfekciya-kvartiry.webp
+004,Клининг,Генеральная уборка квартиры,8000,RUB,услуга,https://center-chistoty-nt.ru/klining/,https://center-chistoty-nt.ru/img/kristalnaya-chistota-posle-professionalnoj-uborki.jpg
+005,Клининг,Уборка помещений после ремонта,10000,RUB,услуга,https://center-chistoty-nt.ru/klining/,https://center-chistoty-nt.ru/img/generalnaya-uborka-kuhni-myte-tehniki-tagil.jpg
+006,Дезинсекция,Акарицидная обработка от клещей,2000,RUB,кв. м.,https://center-chistoty-nt.ru/obrabotka-ot-kleschey/,https://center-chistoty-nt.ru/img/akaricidnaya-obrabotka-uchastka-ot-kleshchej.jpg

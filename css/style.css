@@ -309,6 +309,20 @@ img {
     height: 100%;
 }
 
+/* Улучшение отображения карточек в блоге */
+.blog-grid {
+    background: rgba(255, 255, 255, 0.05); /* Легкий фон всей сетки */
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.blog-card {
+    background: rgba(30, 58, 138, 0.8) !important; /* Усиливаем фон самой карточки */
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+.blog-card:hover {
+    background: rgba(2, 132, 199, 0.9) !important;
+}
 /* ============================================ */
 /* ДВУХКОЛОНОЧНЫЙ LAYOUT ДЛЯ ПРАЙСА + УСЛУГ     */
 /* ============================================ */
@@ -330,7 +344,7 @@ img {
 
 /* СДВИГАЕМ ТОЛЬКО ПРАВУЮ КОЛОНКУ ВЛЕВО */
 .price-services-row > div:last-child {
-    margin-left: -6rem;  /* ← УВЕЛИЧЕНО ВДВОЕ */
+    margin-left: 0rem;  /* было -6, сьехала в бок */
 }
 
 .price-services-row h2,
@@ -359,6 +373,15 @@ img {
     .price-table {
         max-width: 100%;
     }
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Включает прокрутку на телефонах, чтобы не ломать дизайн */
+    margin-bottom: 2rem;
+}
+.price-table {
+    width: 100%; /* Таблица на всю ширину колонки */
+    margin: 0 auto;
 }
 
 /* ============================================ */
