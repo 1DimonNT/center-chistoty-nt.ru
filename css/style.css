@@ -324,66 +324,142 @@ img {
     background: rgba(2, 132, 199, 0.9) !important;
 }
 /* ============================================ */
-/* ДВУХКОЛОНОЧНЫЙ LAYOUT ДЛЯ ПРАЙСА + УСЛУГ     */
+/* ДВУХКОЛОНОЧНЫЙ LAYOUT ДЛЯ ПРАЙСА + УСЛУГИ (SEO-ОПТИМИЗИРОВАННЫЙ) */
 /* ============================================ */
 .price-services-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem; /* Увеличен отступ для лучшей читаемости */
     margin: 0 0 2rem 0;
     align-items: start;
 }
 
+/* КЛЮЧЕВОЕ ПРАВИЛО: предотвращает вылезание контента */
+.price-services-row > * {
+    min-width: 0;
+}
+
+/* Левая колонка (таблица с ценами) */
+.price-services-row > div:first-child {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Правая колонка (текст, списки, преимущества) */
+.price-services-row > div:last-child {
+    margin-left: 0;
+}
+
+/* Обертка для таблицы с горизонтальной прокруткой */
 .price-services-row .table-wrapper {
+    margin: 0;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Таблица внутри левой колонки */
+.price-services-row .price-table {
+    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
-.price-table {
-    max-width: 400px;
-}
-
-/* СДВИГАЕМ ТОЛЬКО ПРАВУЮ КОЛОНКУ ВЛЕВО */
-.price-services-row > div:last-child {
-    margin-left: 0rem;  /* было -6, сьехала в бок */
-}
-
+/* Стили для заголовков внутри сетки */
 .price-services-row h2,
 .price-services-row h3 {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
+/* Стили для списков (важно для SEO-текста) */
 .price-services-row ul {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding-left: 1.2rem;
 }
 
-/* Адаптив */
+.price-services-row li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+/* ============================================ */
+/* ОСНОВНЫЕ СТИЛИ ДЛЯ ТАБЛИЦ (РАБОТАЮТ НА ВСЕХ СТРАНИЦАХ) */
+/* ============================================ */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: var(--blue-dark);
+    color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+}
+
+.price-table th {
+    background: #3b82f6;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.price-table td {
+    border: 1px solid rgba(189, 212, 231, 0.2);
+    padding: 0.6rem 0.75rem;
+}
+
+.price-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================ */
+/* АДАПТИВ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
+/* ============================================ */
 @media (max-width: 768px) {
     .price-services-row {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: 1fr; /* Одна колонка на мобильных */
+        gap: 1.5rem;
     }
 
     .price-services-row > div:last-child {
-        margin-left: 0 !important;
+        margin-left: 0;
+    }
+
+    .price-services-row .price-table {
+        max-width: 100%;
+    }
+
+    /* Увеличиваем отступы для касаний на мобильных */
+    .price-table th,
+    .price-table td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-services-row {
+        gap: 1rem;
     }
 
     .price-table {
-        max-width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 0.4rem;
     }
 }
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto; /* Включает прокрутку на телефонах, чтобы не ломать дизайн */
-    margin-bottom: 2rem;
-}
-.price-table {
-    width: 100%; /* Таблица на всю ширину колонки */
-    margin: 0 auto;
-}
-
 /* ============================================ */
 /* 7. ЗАГОЛОВКИ                                 */
 /* ============================================ */
