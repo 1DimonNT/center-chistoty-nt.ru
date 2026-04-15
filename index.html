@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/img/favicon-centr-chistoty-nt.jpg">
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-centr-chistoty-nt.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon-centr-chistoty-nt.webp">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-centr-chistoty-nt.webp">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://center-chistoty-nt.ru/">
 
     <!-- SEO Core -->
     <title>Центр Чистоты НТ | Химчистка мебели, дезинсекция, клининг в Нижнем Тагиле</title>
     <meta name="description" content="Профессиональная химчистка диванов и ковров, уничтожение клопов и тараканов, клининг, озонация, обработка участков от клещей в Нижнем Тагиле. Мастер Дмитрий. Выезд на дом, гарантия.">
-    <!-- Open Graph (для соцсетей) -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Центр Чистоты НТ | Химчистка, дезинсекция, клининг в Нижнем Тагиле">
     <meta property="og:description" content="Профессиональная химчистка мебели, уничтожение клопов и тараканов, клининг, озонация, обработка от клещей. Мастер Дмитрий. +7 (950) 642-22-92">
-    <meta property="og:image" content="https://center-chistoty-nt.ru/img/himchistka-dezinsekciya-nizhnij-tagil.jpg">
+    <meta property="og:image" content="https://center-chistoty-nt.ru/img/himchistka-dezinsekciya-nizhnij-tagil.webp">
     <meta property="og:url" content="https://center-chistoty-nt.ru/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
-а    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
@@ -26,16 +32,25 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Центр Чистоты НТ",
-            "image": "/img/logo-centr-chistoty-nizhnij-tagil.jpg",
+            "image": "https://center-chistoty-nt.ru/img/logo-centr-chistoty-nizhnij-tagil.webp",
             "telephone": "+79506422292",
             "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "ул. Черноисточинское шоссе, д. 78, офис 1",
                 "addressLocality": "Нижний Тагил",
+                "addressRegion": "Свердловская область",
+                "postalCode": "622049",
                 "addressCountry": "RU"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "57.9105",
+                "longitude": "59.9812"
             },
             "areaServed": "Нижний Тагил и Свердловская область",
             "priceRange": "₽₽",
-            "openingHours": "Mo-Su 09:00-20:00"
+            "openingHours": "Mo-Su 09:00-20:00",
+            "url": "https://center-chistoty-nt.ru/"
         }
     </script>
 
@@ -48,8 +63,11 @@
 </head>
 <body>
 
-<!-- HEADER: ПОЛУПРОЗРАЧНЫЙ С ФОНОМ САЙТА -->
+<!-- HEADER -->
 <header class="site-header">
+    <!-- ЛОГОТИП СКРЫТ ВИЗУАЛЬНО (для SEO) -->
+    <img src="/img/logo-centr-chistoty-nizhnij-tagil.webp" alt="Логотип Центр Чистоты НТ" class="header-logo" width="80" height="80">
+
     <div class="header-content">
         <h1>Центр Чистоты НТ</h1>
         <p class="header-subtitle">Профессиональная химчистка, дезинсекция и клининг в Нижнем Тагиле</p>
@@ -57,99 +75,107 @@
     </div>
 </header>
 
-    <!-- STICKY NAV (БУДЕТ НА ВСЕХ СТРАНИЦАХ) -->
-    <nav class="sticky-nav">
-        <div class="nav-grid">
-            <a href="/" class="nav-card nav-home">🏠 Главная</a>
-            <a href="/himchistka/#price" class="nav-card">🧼 Химчистка</a>
-            <a href="/dezinsekciya/#price" class="nav-card">🐜 Дезинсекция</a>
-            <a href="/klining/#price" class="nav-card">🧹 Клининг</a>
-            <a href="/ozonaciya/#price" class="nav-card">💨 Озонация</a>
-            <a href="/obrabotka-ot-kleschey/#price" class="nav-card">🕷️ Клещи</a>
-            <a href="/blog/" class="nav-card">📰 Блог</a>
+<!-- STICKY NAV -->
+<nav class="sticky-nav">
+    <div class="nav-grid">
+        <a href="/" class="nav-card nav-home" aria-current="page">🏠 Главная</a>
+        <a href="/himchistka/#price" class="nav-card">🧼 Химчистка</a>
+        <a href="/dezinsekciya/#price" class="nav-card">🐜 Дезинсекция</a>
+        <a href="/klining/#price" class="nav-card">🧹 Клининг</a>
+        <a href="/ozonaciya/#price" class="nav-card">💨 Озонация</a>
+        <a href="/obrabotka-ot-kleschey/#price" class="nav-card">🕷️ Клещи</a>
+        <a href="/blog/" class="nav-card">📰 Блог</a>
+    </div>
+</nav>
+
+<!-- Хлебные крошки -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/">🏠 Главная</a></li>
+    </ol>
+</nav>
+
+<!-- ОСНОВНОЙ КОНТЕНТ -->
+<main class="container">
+    <section class="content-card">
+        <h2>Чистота и безопасность вашего дома — моя работа</h2>
+        <p>Меня зовут Дмитрий, я профессиональный мастер по химчистке, дезинсекции и клинингу в Нижнем Тагиле. Работаю с 2018 года, выполнено более 1000 заказов. Использую современное оборудование (Santoemma, Stihl SR 430, Airofog U260, озонатор OZONBOX AIR-15) и безопасные сертифицированные препараты.</p>
+        <p>Предлагаю полный спектр услуг для вашего дома, дачи или офиса. Работаю напрямую, без посредников. Гарантия качества, фиксированная цена, выезд на дом.</p>
+        <div class="text-center mt-2">
+            <a href="tel:+79506422292" class="btn">📞 Позвонить мастеру</a>
+            <a href="https://vk.ru/1dimonnt" class="btn btn-outline" target="_blank" rel="noopener noreferrer">✏️ Написать в ВК</a>
         </div>
-    </nav>
+    </section>
 
-    <!-- Хлебные крошки (SEO) -->
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-         <a href="/">🏠 Главная</a>
-    </nav>
+    <!-- Сетка услуг -->
+    <section class="services-grid">
+        <a href="/himchistka/#price" class="service-card-link">
+            <article class="service-card">
+                <img src="img/chistka-divana-na-domu-tagil-02.webp" alt="Химчистка дивана на дому в Нижнем Тагиле" width="400" height="220" loading="lazy">
+                <h3>🧼 Химчистка мебели</h3>
+                <p>Диваны, кресла, матрасы, ковры. Удаление любых пятен и запахов экстракторной чисткой.</p>
+                <span class="btn">Узнать цену →</span>
+            </article>
+        </a>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
-    <main class="container">
-        <div class="content-card">
-            <h2>Чистота и безопасность вашего дома — моя работа</h2>
-            <p>Меня зовут Дмитрий, я профессиональный мастер по химчистке, дезинсекции и клинингу в Нижнем Тагиле. Работаю с 2018 года, выполнено более 1000 заказов. Использую современное оборудование (Santoemma, Stihl SR 430, Airofog U260, озонатор OZONBOX AIR-15) и безопасные сертифицированные препараты.</p>
-            <p>Предлагаю полный спектр услуг для вашего дома, дачи или офиса. Работаю напрямую, без посредников. Гарантия качества, фиксированная цена, выезд на дом.</p>
-            <div class="text-center mt-2">
-                <a href="tel:+79506422292" class="btn">📞 Позвонить мастеру</a>
-                <a href="https://vk.ru/1dimonnt" class="btn btn-outline" target="_blank" rel="noopener">✏️ Написать в ВК</a>
-            </div>
-        </div>
+        <a href="/dezinsekciya/#price" class="service-card-link">
+            <article class="service-card">
+                <img src="img/professionalnaya-dezinfekciya-kvartiry.webp" alt="Дезинсекция от клопов и тараканов в Нижнем Тагиле" width="400" height="220" loading="lazy">
+                <h3>🐜 Дезинсекция</h3>
+                <p>Уничтожение клопов, тараканов, муравьев, блох. Метод холодного тумана, препараты 4 класса.</p>
+                <span class="btn">Узнать цену →</span>
+            </article>
+        </a>
 
-        <!-- Сетка услуг -->
-        <div class="services-grid">
-            <a href="/himchistka/#price" class="service-card-link">
-                <article class="service-card">
-                    <img src="img/chistka-divana-na-domu-tagil-02.jpg" alt="Химчистка дивана на дому в Нижнем Тагиле" loading="lazy">
-                    <h3>🧼 Химчистка мебели</h3>
-                    <p>Диваны, кресла, матрасы, ковры. Удаление любых пятен и запахов экстракторной чисткой.</p>
-                    <span class="btn">Узнать цену →</span>
-                </article>
-            </a>
+        <a href="/klining/#price" class="service-card-link">
+            <article class="service-card">
+                <img src="img/professionalnoe-myte-okon-i-zhalyuzi-nizhnij-tagil.webp" alt="Клининг и мытье окон в Нижнем Тагиле" width="400" height="220" loading="lazy">
+                <h3>🧹 Клининг</h3>
+                <p>Генеральная уборка, после ремонта, мытье окон и фасадов. Профессиональная химия и инвентарь.</p>
+                <span class="btn">Узнать цену →</span>
+            </article>
+        </a>
 
-            <a href="/dezinsekciya/#price" class="service-card-link">
-                <article class="service-card">
-                    <img src="img/professionalnaya-dezinfekciya-kvartiry.webp" alt="Дезинсекция от клопов и тараканов в Нижнем Тагиле" loading="lazy">
-                    <h3>🐜 Дезинсекция</h3>
-                    <p>Уничтожение клопов, тараканов, муравьев, блох. Метод холодного тумана, препараты 4 класса.</p>
-                    <span class="btn">Узнать цену →</span>
-                </article>
-            </a>
+        <a href="/ozonaciya/#price" class="service-card-link">
+            <article class="service-card">
+                <img src="img/ozonaciya-kvartiry-nizhnij-tagil-ochistka-vozduha.webp" alt="Озонация квартиры для удаления запахов в Нижнем Тагиле" width="400" height="220" loading="lazy">
+                <h3>💨 Озонация</h3>
+                <p>Удаление любых запахов: табак, гарь, плесень, животные. Полная дезинфекция воздуха.</p>
+                <span class="btn">Узнать цену →</span>
+            </article>
+        </a>
 
-            <a href="/klining/#price" class="service-card-link">
-                <article class="service-card">
-                    <img src="img/professionalnoe-myte-okon-i-zhalyuzi-nizhnij-tagil.jpg" alt="Клининг и мытье окон в Нижнем Тагиле" loading="lazy">
-                    <h3>🧹 Клининг</h3>
-                    <p>Генеральная уборка, после ремонта, мытье окон и фасадов. Профессиональная химия и инвентарь.</p>
-                    <span class="btn">Узнать цену →</span>
-                </article>
-            </a>
+        <a href="/obrabotka-ot-kleschey/#price" class="service-card-link">
+            <article class="service-card">
+                <img src="img/akaricidnaya-obrabotka-uchastka-ot-kleshchej.webp" alt="Акарицидная обработка участка от клещей в Нижнем Тагиле" width="400" height="220" loading="lazy">
+                <h3>🕷️ Акарицидная обработка</h3>
+                <p>Уничтожение клещей на участках и дачах. Мотоопрыскиватель Stihl SR 430, гарантия 3 дня.</p>
+                <span class="btn">Узнать цену →</span>
+            </article>
+        </a>
+    </section>
+</main>
 
-            <a href="/ozonaciya/#price" class="service-card-link">
-                <article class="service-card">
-                    <img src="img/ozonaciya-kvartiry-nizhnij-tagil-ochistka-vozduha.jpg" alt="Озонация квартиры для удаления запахов в Нижнем Тагиле" loading="lazy">
-                    <h3>💨 Озонация</h3>
-                    <p>Удаление любых запахов: табак, гарь, плесень, животные. Полная дезинфекция воздуха.</p>
-                    <span class="btn">Узнать цену →</span>
-                </article>
-            </a>
-
-            <a href="/obrabotka-ot-kleschey/#price" class="service-card-link">
-                <article class="service-card">
-                    <img src="img/akaricidnaya-obrabotka-uchastka-ot-kleshchej.jpg" alt="Акарицидная обработка участка от клещей в Нижнем Тагиле" loading="lazy">
-                    <h3>🕷️ Акарицидная обработка</h3>
-                    <p>Уничтожение клещей на участках и дачах. Мотоопрыскиватель Stihl SR 430, гарантия 3 дня.</p>
-                    <span class="btn">Узнать цену →</span>
-                </article>
-            </a>
-        </div>
-    </main>
-
-    <!-- ФУТЕР -->
- <footer>
+<!-- ФУТЕР -->
+<footer>
     <p>
         <a href="tel:+79506422292">+7 (950) 642-22-92</a> &nbsp;|&nbsp;
-        <a href="https://vk.ru/1dimonnt" target="_blank" rel="noopener">Написать в ВК</a>
+        <a href="https://vk.ru/1dimonnt" target="_blank" rel="noopener noreferrer">Написать в ВК</a>
     </p>
     <p>
-        <a href="https://www.avito.ru/profile/rating" target="_blank" rel="noopener">Отзывы на Авито</a> &nbsp;|&nbsp;
-        <a href="https://2gis.ru/ntagil/user/b3045f321bdc499189825612b6a7ea3d" target="_blank" rel="noopener">Профиль на 2ГИС</a>
+        <a href="https://www.avito.ru/profile/rating" target="_blank" rel="noopener noreferrer">Отзывы на Авито</a> &nbsp;|&nbsp;
+        <a href="https://2gis.ru/ntagil/user/b3045f321bdc499189825612b6a7ea3d" target="_blank" rel="noopener noreferrer">Профиль на 2ГИС</a>
+    </p>
+    <!-- ИКС Яндекс -->
+    <p style="margin: 1rem 0;">
+        <a href="https://webmaster.yandex.ru/siteinfo/?site=https://center-chistoty-nt.ru/" target="_blank" rel="noopener">
+            <img width="88" height="31" alt="Индекс качества сайта" style="border-radius: 8px;" src="https://yandex.ru/cycounter?https://center-chistoty-nt.ru/&theme=light&lang=ru">
+        </a>
     </p>
     <p>© 2026 Центр Чистоты НТ. Нижний Тагил. Профессиональная химчистка и дезинсекция.</p>
 </footer>
 
-    <!-- Скрипты -->
-    <script src="js/form.js" defer></script>
+<!-- Скрипты -->
+<script src="/js/main.js" defer></script>
 </body>
 </html>

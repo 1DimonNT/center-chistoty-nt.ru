@@ -1,45 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- ============================================ -->
+    <!-- ГЛАВНАЯ                                     -->
+    <!-- ============================================ -->
     <url>
         <loc>https://center-chistoty-nt.ru/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- ============================================ -->
+    <!-- ОСНОВНЫЕ УСЛУГИ                              -->
+    <!-- ============================================ -->
     <url>
         <loc>https://center-chistoty-nt.ru/himchistka/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
     <url>
         <loc>https://center-chistoty-nt.ru/dezinsekciya/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
     <url>
         <loc>https://center-chistoty-nt.ru/klining/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-    <url>
-        <loc>https://center-chistoty-nt.ru/obrabotka-ot-kleschey/</loc>
-        <lastmod>2026-04-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
+
     <url>
         <loc>https://center-chistoty-nt.ru/ozonaciya/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/obrabotka-ot-kleschey/</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- БЛОГ (ГЛАВНАЯ)                               -->
+    <!-- ============================================ -->
     <url>
         <loc>https://center-chistoty-nt.ru/blog/</loc>
-        <lastmod>2026-04-13</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- ============================================ -->
+    <!-- СТАТЬИ: ХИМЧИСТКА                            -->
+    <!-- ============================================ -->
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/himchistka/pochemu-stoit-doverit-professionalam.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/himchistka/vidy-tkaney-i-osobennosti-chistki.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/himchistka/kak-vyvesti-pyatna-s-divana.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/himchistka/chistota-zdorovye.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- СТАТЬИ: ДЕЗИНСЕКЦИЯ                          -->
+    <!-- ============================================ -->
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/dezinsekciya/otkuda-berutsya-nasekomye-v-dome.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/dezinsekciya/kak-raspoznat-nalichie-klopov.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/dezinsekciya/metody-dezinsekcii.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/dezinsekciya/mify-o-podkidivanii-tarakanov.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/dezinsekciya/bolezni-perenosimye-vreditelyami.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- СТАТЬИ: КЛИНИНГ                              -->
+    <!-- ============================================ -->
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/klining/kak-pravilno-ubirat-kvartiru.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/klining/uborka-posle-remonta-chto-vazhno-znat.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/klining/spec-cleaning-chto-eto.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- СТАТЬИ: ОЗОНАЦИЯ                             -->
+    <!-- ============================================ -->
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/ozonaciya/chto-takoe-ozon.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/ozonaciya/plyusy-i-minusy-ozonirovaniya.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/ozonaciya/ozon-v-konditsionerakh.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/ozonaciya/primenenie-ozona-v-meditsine.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- ============================================ -->
+    <!-- СТАТЬИ: ОБРАБОТКА ОТ КЛЕЩЕЙ                  -->
+    <!-- ============================================ -->
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/kleschi/akaricidnaya-obrabotka-chto-eto.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/kleschi/kogda-provodit-obrabotku-ot-kleschey.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/kleschi/mery-bezopasnosti-pri-obrabotke.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://center-chistoty-nt.ru/blog/kleschi/bolezni-perenosimye-kleshchami.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
